@@ -9,39 +9,54 @@
 
 <title>Rahim</title>
 <style>
-body{
-background-color:#000000;
+
+
+  
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+  
+  body{
+  background-image : url("rahim.jpg");
+  background-color:#000000;
+
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+
+    position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 
 }
-div{
-  width:40%;
-    margin:auto;
-    border: 1px solid black;
-  }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
 </style>
 </head>
 
-  <div>
-  <img src="rahim.jpg" alt="Rahim"  class ="responsive"  />
-  <br>
-    <FONT style="font-size:1.5vw;" color ="ffffff" face="Times New Roman"> "Ton Seigneur ne t'a ni abandonné, ni détesté."  <br>
-  - Sourate n°93 Ad-Duha | Verset 3"
-  </div>
+  
 
+<p>
+  <FONT style="font-size:1.5vw;" color ="ffffff" face="Times New Roman">
+    Ton Seigneur ne t'a ni abandonné, ni détesté.  <br>
+  - Sourate n°93 Ad-Duha | Verset 3"
 <body>
 <br>
-<div id="countdown">
+<br>
   <strong>Temps restant</strong> :
   <span id="countdown_day" >--</span> jours
   <span id="countdown_hour">--</span> heures
   <span id="countdown_min" >--</span> minutes
   <span id="countdown_sec" >--</span> secondes
-</div>
+
+</p>
 </body>
 
 </html>
